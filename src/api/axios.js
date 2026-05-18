@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL: "https://clinic-management-backend-snyj.vercel.app/api",
+  // baseURL: "http://localhost:4000/api",
 });
 
 // Attach token automatically
