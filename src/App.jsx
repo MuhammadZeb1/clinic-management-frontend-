@@ -29,10 +29,15 @@ import AnalyticsPage from "./pages/analytics/AnalyticsPage";
 // Optional: Role Requests page (you added earlier)
 import RoleRequests from "./pages/admin/RoleRequests";
 import ApplyRole from "./pages/ApplyRole";
+import VisitorNavbar from "./components/VisitorNavbar";
 
 const App = () => {
   return (
+    <>
+
+    <VisitorNavbar/>
     <Routes>
+      
 
       {/* ================= PUBLIC ROUTES ================= */}
       <Route path="/login" element={<Login />} />
@@ -87,6 +92,7 @@ const App = () => {
       <Route path="*" element={<h1>404 - Page Not Found</h1>} />
 
     </Routes>
+    </>
   );
 };
 
